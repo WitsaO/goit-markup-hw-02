@@ -43,24 +43,30 @@ body {
     font-family: inherit;
 }
 
-.link:hover {
+.link:hover
+.link:focus {
     color: var(--accent-color);
 }
-
 
 .list {
     list-style: none;
 }
  
-
 .button {
     border: none;
     background-color: var(--accent-color);
     color: var(--main-light);
 
     cursor: pointer;
-}
+} 
 
+.filter-btn:hover
+.filter-btn:focus {
+    border: none;
+    color: var(--main-light);
+    background-color: var(--accent-color);
+    cursor: pointer;
+}
 
 .section {
     background-color: var(--main-light);
@@ -74,61 +80,113 @@ body {
     line-height: 1.17;
 }
 
-/* header */
-
 .header {
     background-color: var(--background-accent);
-}
+    display: flex;
+} 
 
 .logo {
     font-family: var(--font-family-logo);
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
+    color: var(--main-light);
 } 
+
+.first {
+    color: var(--main-dark);
+}
 
 .accent {
     color: var(--accent-color);
 }
 
-.nav-list {
-    padding-left: 0;
+.nav {
+    display: flex;
 }
+
 
 .nav-link {
     font-weight: 500;
-font-size: 14px;
-line-height: 1.14;
-
-color: var(--secendary-color);
+    line-height: 1.14;
+    
+    color: var(--secendary-color);
 }
 
 .contacts-link {
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     
     color: var(--main-color);
 }
 
 .hero {
-color: var(--main-light);
-background-color: var(--background-dark);
-text-align: center;
-text-transform: uppercase;
+    color: var(--main-light);
+    background-color: var(--background-dark);
+    text-transform: uppercase;
 }
 
-.title {
+.title-hero {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;  
-}
+} 
 
 .hero-btn {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-/* display: flex; */
-    align-items: center;
-    text-align: center;
+    display: flex;
+}
+
+.title-section {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    
+    color: var(--secendary-color);
+}
+
+.title-item {
+    font-weight: 700;
+    line-height: 1,14;
+    
+    color: var(--secendary-color);
+
+}
+
+.title-card {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    
+    color: var(--secendary-color);
+
+}
+
+.title-project {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    
+    color: var(--secendary-color);
+}
+
+.address {
+    line-height: 1.71;
+    font-style: normal;
+    
+    color: var(--main-light);
+} 
+
+footer {
+    background-color: var(--background-dark);
+}
+
+.last {
+    color: var(--main-light)
+}
+
+.projects-item {
+    display: block;
 }
