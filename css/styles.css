@@ -43,8 +43,7 @@ body {
     font-family: inherit;
 }
 
-.link:hover
-.link:focus {
+.link:hover {
     color: var(--accent-color);
 }
 
@@ -60,8 +59,7 @@ body {
     cursor: pointer;
 } 
 
-.filter-btn:hover
-.filter-btn:focus {
+.filter-btn:hover {
     border: none;
     color: var(--main-light);
     background-color: var(--accent-color);
@@ -81,7 +79,6 @@ body {
 }
 
 .header {
-    background-color: var(--background-accent);
     display: flex;
 } 
 
@@ -104,7 +101,6 @@ body {
 .nav {
     display: flex;
 }
-
 
 .nav-link {
     font-weight: 500;
@@ -187,6 +183,15 @@ footer {
     color: var(--main-light)
 }
 
+.conto {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
 .projects-item {
     display: block;
+}
+
+.text {
+    color: var(--main-color);
 }
